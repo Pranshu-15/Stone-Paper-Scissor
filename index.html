@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Stone Paper Scissors</h1>
+    <div class="btn-container">
+    <button class="img-btn img-stone"
+      onclick="let compChoice = generate_computer_choice();
+    let resultMsg = get_result('Stone',compChoice);
+     result_popup('Stone' , compChoice , resultMsg);"
+    >
+      <img src="rock.png" alt="stone">
+    </button>
+    <button class="img-btn img-paper"
+      onclick="compChoice = generate_computer_choice();
+    resultMsg = get_result('Paper',compChoice);
+    result_popup('Paper' , compChoice , resultMsg);
+
+    "
+    >
+      <img src="paper.png" alt="paper">
+    </button>
+    <button class="img-btn img-scissors"
+      onclick="compChoice = generate_computer_choice();
+    resultMsg = get_result('Scissors',compChoice);
+    result_popup('Scissors' , compChoice , resultMsg);
+    "
+    >
+      <img src="scissors.png" alt="scissors">
+    </button>
+</div>
+    <div class="gameStats">
+    <p id = "user_move" class="my-txt"></p>
+    <p id = "computer_move" class="my-txt"></p>
+    <p id = "result" class="my-txt"></p>
+    <p id = "score" class="my-txt"></p>
+    <p id = "round" class="my-txt"></p>
+</div>
+    <button class="reset-btn"
+    onclick="localStorage.clear();
+        reset_score();
+        ">
+      Reset Game
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-image: linear-gradient(to right, #d6e8f6, #cbebf2, #c9ece6, #d1ecd7, #e1e8c9, #eae2c1, #f4dcbc, #fcd5bc, #fccdb9, #fbc5b7, #f8bdb7, #f5b6b8);
+  }
+
+  .btn-container{
+    margin-top: -12px;
+  }
+  .img-btn {
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-top: 16px;
+    margin-bottom: 28px;
+    height: 191px;
+    width: 193px;
+    cursor: pointer;
+}
+
+  .reset-btn {
+    font-size: 30px;
+    margin-top: 15px;
+}
+.gameStats {
+    border: 2px solid black;
+    text-align: left;
+    font-size: 26px;
+    width: 52vw;
+    margin-left: 352px;
+}
+
+.my-txt {
+    margin-left: 30px;
+    letter-spacing: 0.256em;
+    padding: 9px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: cursive;
+}
